@@ -4,20 +4,13 @@
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron text-center">
-        <h1>Listagem</h1>
+        <h1>Painel Pessoal</h1>
     </div>
 
     <div class="container">
         <div class="row">
 
-        <?php foreach ($this->products as $product) : ?>
-            <div class="col-sm col-md-4">
-                   <img src="https://via.placeholder.com/350" alt="" class="img-responsive">
-                   <h3><a href="<?=HOME;?>/product/<?=$product['id'];?>"> <?=$product['name'];?> </a></h3>
-                   <p>  <?=$product['description'];?>  </p>
-                   <p>  <?=number_format($product['price'], 2,',','.');?>  </p>
-            </div>
-        <?php endforeach; ?>
+
 
         </div>
     </div>

@@ -1,0 +1,54 @@
+<?php require VIEWS_PATH . 'includes/header.phtml'; ?>
+
+    <br>
+    <br>
+    <br>
+<div class="container">
+
+    <div class="col-md-12">
+        <h2>Editar despesa</h2>
+
+        <form action="<?=HOME;?>/myexpenses/edit/<?=$this->expense['id'];?>" class="form" method="post">
+
+            <div class="form-group">
+                Valor do gasto: <input name="value" type="text" class="form-control"
+                                       value=" <?= $this->expense['value']; ?>" placeholder="Valor">
+            </div>
+
+            <div class="form-group">
+                Categoria:
+                <select name="categories_id" class="form-control">
+                    <?php  foreach ($this->categories as $c) : ?>
+                        <option value="<?=$c['id']?>"
+
+                            <?php if ($c['id'] == $this->expense['categories_id']) : ?>
+
+                                selected
+
+                            <?php endif; ?>
+
+                        > <?=$c['name']?> </option>
+                    <?php endforeach; ?>
+                </select>
+            </div>
+
+
+            <div class="form-group">
+                Descrição: <textarea name="description" class="form-control" id="" cols="30" rows="10">
+                     <?= $this->expense['description']; ?>
+                </textarea>
+            </div>
+
+
+            <button type="submit" class="btn btn-success btn-lg">ATUALIZAR</button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+
+
+<?php require VIEWS_PATH . 'includes/footer.phtml'; ?>

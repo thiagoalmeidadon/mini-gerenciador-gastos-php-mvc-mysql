@@ -1,0 +1,44 @@
+<?php require VIEWS_PATH . 'includes/header.phtml'; ?>
+
+    <br>
+    <br>
+    <br>
+<div class="container">
+
+    <div class="col-md-12">
+        <h2>Adicionar nova despesa</h2>
+
+        <form action="<?=HOME;?>/myexpenses/new" class="form" method="post">
+
+            <div class="form-group">
+                Valor do gasto: <input name="value" type="text" class="form-control" placeholder="Valor">
+            </div>
+
+            <div class="form-group">
+                Categoria:
+                <select name="categories_id" class="form-control">
+                    <?php  foreach ($this->categories as $c) : ?>
+                        <option value="<?=$c['id']?>"> <?=$c['name']?> </option>
+                    <?php endforeach; ?>
+                </select>
+            </div>
+
+            <input type="hidden" name="users_id" />
+
+            <div class="form-group">
+                Descrição: <textarea name="description" class="form-control" id="" cols="30" rows="10"></textarea>
+            </div>
+
+
+            <button type="submit" class="btn btn-success btn-lg">ADICIONAR</button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+
+
+<?php require VIEWS_PATH . 'includes/footer.phtml'; ?>

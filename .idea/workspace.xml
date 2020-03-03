@@ -1,17 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5a2b5640-835e-4a66-b262-a6f99d9d1895" name="Default Changelist" comment="" />
+    <list default="true" id="5a2b5640-835e-4a66-b262-a6f99d9d1895" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Authenticator/Authenticator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Authenticator/CheckUserLogged.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/AuthController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/MyExpensesController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Category.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Expense.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Session/Flash.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Session/Session.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/auth/index.phtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/expenses/edit.phtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/expenses/index.phtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/expenses/new.phtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/includes/messages.phtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ProductController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DB/Connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DB/Connection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DB/Entity.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DB/Entity.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Product.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/includes/header.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/views/includes/header.phtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/site/about.phtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/site/contact.phtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/site/index.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/views/site/index.phtml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -19,6 +49,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1YUwVYPvlBQermPRn7tA7QF374a" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -27,7 +58,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/views/site" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/views/expenses" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -37,10 +68,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\projetosPhp\sistema_gerenciar_gastos\views\expenses" />
+      <recent name="C:\projetosPhp\sistema_gerenciar_gastos\src\Entity" />
       <recent name="C:\projetosPhp\site_catalogos_produtos_php_mvc\views\site" />
       <recent name="C:\projetosPhp\site_catalogos_produtos_php_mvc\src\Controller" />
       <recent name="C:\projetosPhp\site_institucional_php_mvc\src\Controller" />
-      <recent name="C:\projetosPhp\site_institucional_php_mvc\views\site" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -54,7 +86,8 @@
       <option name="presentableId" value="Default" />
       <updated>1583010504954</updated>
       <workItem from="1583010506294" duration="16222000" />
-      <workItem from="1583031980989" duration="9400000" />
+      <workItem from="1583031980989" duration="10002000" />
+      <workItem from="1583092560172" duration="37381000" />
     </task>
     <servers />
   </component>
@@ -62,14 +95,22 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="652" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1583029544108">
+    <state x="552" y="178" width="816" height="730" key="#Intentions" timestamp="1583208656654">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="652" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/1920.0.1024.728/2944.0.1280.680/4224.0.1280.680@0.0.1920.1040" timestamp="1583029544108" />
-    <state x="795" y="443" key="NewPhpFileDialog" timestamp="1583089586540">
+    <state x="552" y="178" width="816" height="730" key="#Intentions/0.0.1920.1040/1920.0.1024.728/2944.0.1280.680/4224.0.1280.680@0.0.1920.1040" timestamp="1583208656654" />
+    <state x="652" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1583211214349">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="795" y="443" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1024.728/2944.0.1280.680/4224.0.1280.680@0.0.1920.1040" timestamp="1583089586540" />
+    <state x="652" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/1920.0.1024.728/2944.0.1280.680/4224.0.1280.680@0.0.1920.1040" timestamp="1583211214349" />
+    <state x="722" y="334" key="NewPhpClassDialog" timestamp="1583215087515">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="722" y="334" key="NewPhpClassDialog/0.0.1920.1040/1920.0.1024.728/2944.0.1280.680/4224.0.1280.680@0.0.1920.1040" timestamp="1583215087515" />
+    <state x="795" y="443" key="NewPhpFileDialog" timestamp="1583210025689">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="795" y="443" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1024.728/2944.0.1280.680/4224.0.1280.680@0.0.1920.1040" timestamp="1583210025689" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1583028955935">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
